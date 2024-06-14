@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FREE CZ!!</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="page__body body">
+
+  <div class="body__popup popup visually-hidden" id="popup">
+    <button class="popup__close" id="closeVideo">
+      <span class="visually-hidden">Close video</span>
+    </button>
+    <video class="popup__video" id="video" controls>
+      <source src="img/video.mp4" type="video/mp4">
+      <source src="img/video.webm" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <header class="body__header header" id="header">
+    <div class="header__inner">
+
+      <div class="header__inner-left">
+        <a class="header__logo-link" href="#">
+          <img class="header__logo" width="189" height="31" src="img/logo.svg" alt="FREE CZ!!">
+        </a>
+
+        <nav class="header__menu menu">
+          <ul class="menu__links">
+            <li class="menu__link">
+              <a href="#about">About the game</a>
+            </li>
+            <li class="menu__link">
+              <a href="#tokenomics">Tokenomics</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+      <div class="header__inner-right">
+        <a class="header__btn--cta btn btn--cta" href="#">PLAY NOW<br />FOR FREE</a>
+        <button class="header__open-menu" id="open-menu" aria-label="Open menu"></button>
+        <button class="header__close-menu visually-hidden" id="close-menu" aria-label="Close menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="body__main main">
+
+    <section class="main__hero hero" id="hero">
+      <div class="hero__inner">
+        <h1 class="hero__h1">Free CZ!</h1>
+
+      </div>
+
+      <div class="hero__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com/FreeCZ_Now" target="_blank">
+              <span class="visually-hidden">x social network</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/freeCZ_NOW_chat" target="_blank">
+              <span class="visually-hidden">telegram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_blank">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="hero__phone-txt">
+          <button class="hero__btn-play" id="btn-play"><span class="visually-hidden">Play Video</span></button>
+          <h2 class="hero__h2"><span class="hero__blue-gradient">PLAY-TO-EARN</span><br />
+            <span class="hero__blue-gradient">GAME ON THE TON</span><br />
+            <span class="hero__blue-gradient">BLOCKCHAIN</span></h2>
+            <button class="hero__btn btn btn--icon" id="btn-watch">Watch Trailer</button>
+        </div>
+        <img class="hero__cz" src="img/cz.svg" width="197" height="380" alt="cz">
+        <img class="hero__cz hero__cz--pt" src="img/cz-pt.svg" width="197" height="380" alt="cz">
+        <img class="hero__gvt" src="img/gvt.png" srcset="img/gvt.png, img/gvt@2x.png 2x" width="501" height="450" alt="Department of Justice">
+        <img class="hero__skyscraper" src="img/skyscraper.png" srcset="img/skyscraper.png, img/skyscraper.svg 2x" width="382" height="538" alt="Skyscraper">
+
+      </div>
+
+    </section>
+
+
+
+
+
+    <section class="main__ticker ticker ticker--orange" id="ticker-first">
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+    </section>
+
+
+    <section class="main__about about" id="about">
+      <div class="about__inner">
+        <p class="about__text">FREE CZ is more than just a game; it’s <strong>an adventure</strong>! <strong>Join</strong> our hero as he navigates the challenges of prison life. <strong>Boost</strong> his health, <strong>improve</strong> his survival skills, and help him to become <strong>the leader of the criminal world</strong>. Make sure CZ leaves the prison with dignity when the time comes.</p>
+
+        <div class="about__swiper swiper-container">
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img class="swiper-slide__img" width="262" height="462" src="img/slide-004.jpg" srcset="img/slide-004.jpg, img/slide-004@2x.jpg 2x" alt="">
+                  <div class="swiper-slide__txt">Hire inmates for cash into your gang - they’ll help you defeat the big bosses!</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img class="swiper-slide__img" width="262" height="462" src="img/slide-003.jpg" srcset="img/slide-003.jpg, img/slide-003@2x.jpg 2x" alt="">
+                  <div class="swiper-slide__txt">Level up your hero to take on those big, scary bosses of the prison world</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img class="swiper-slide__img" width="262" height="462" src="img/slide-005.jpg" srcset="img/slide-005.jpg, img/slide-005@2x.jpg 2x" alt="">
+                  <div class="swiper-slide__txt">Explore new prison locations and collect in-game cash profits!</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img class="swiper-slide__img" width="262" height="462" src="img/slide-001.jpg" srcset="img/slide-001.jpg, img/slide-001@2x.jpg 2x" alt="">
+                  <div class="swiper-slide__txt">Level up your skills to become stronger, faster, more enduring</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <a class="about__btn btn" href="#">Jump In for<br />Free Play</a>
+      </div>
+    </section>
+
+
+
+    <section class="main__ticker ticker ticker--black" id="ticker-second">
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+    </section>
+
+
+    <section class="main__ tokenomics tokenomics" id="tokenomics">
+      <div class="tokenomics__inner">
+        <h2 class="tokenomics__h2">Tokenomics</h2>
+        <h3 class="tokenomics__h3">Total supply</h3>
+        <p class="tokenomics__text">10,000,000,000&nbsp;&nbsp;<span class="tokenomics__text--small">$FREECZ</span></p>
+        <img class="tokenomics__img" width="986" height="494" src="img/chart.png" srcset="img/chart.png, img/chart@2x.png 2x" alt="A pie chart. 30% - after 1 month of TGE, 30% - after 2 month of TGE, 40% - after 3 month of TGE">
+        <img class="tokenomics__img tokenomics__img--pt" width="986" height="494" src="img/chart--pt.png" srcset="img/chart--pt.png, img/chart--pt@2x.png 2x" alt="A pie chart. 30% - after 1 month of TGE, 30% - after 2 month of TGE, 40% - after 3 month of TGE">
+      </div>
+    </section>
+
+
+    <section class="main__ticker ticker ticker--black" id="ticker-second">
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+    </section>
+
+    <section class="main__presale presale">
+      <div class="presale__inner">
+        <h2 class="presale__h2">Private <span class="presale__h2--outline">round</span></h2>
+        <p class="presale__text"><strong>Play</strong> the game, participate in <strong>the token draw</strong> in our telegram bot. The more people who join to support our dear friend during tough times, the easier it will be for him to get through his challenging period of life! Let’s unite, crypto folks! Once the pre-sale is complete, we will start the listing on CEX Tier 1 .</p>
+        <img class="visually-hidden" style="height: auto" src="img/presale-cards.png" width="786" height="1478" alt="">
+        <div class="presale__cards">
+
+          <div class="presale__card card card--burn">
+            <p class="card__txt--regular">Remember, after TGE,</p>
+            <p class="card__txt--large">25%</p>
+            <p class="card__txt--regular">of the total<br />tokens will be<br />burned!</p>
+          </div>
+
+          <div class="presale__card card card--farming">
+            <p class="card__txt--regular">Up to</p>
+            <p class="card__txt--large">X10</p>
+            <p class="card__txt--regular">farming<br />for pre-sale<br /> participant</p>
+          </div>
+
+          <div class="presale__card card card--coins card--coins-1">
+          </div>
+
+          <div class="presale__card card card--allocate">
+            <p class="card__txt--regular">During the presale,</p>
+            <div class="card__txt-container-h">
+              <p class="card__txt--large">70,000</p>
+              <p class="card__txt--medium">TON</p>
+            </div>
+            <p class="card__txt--regular">will be allocated</p>
+          </div>
+
+          <div class="presale__card card card--coins card--coins-2">
+          </div>
+
+          <div class="presale__card card card--transfer">
+            <p class="card__txt--regular">Transfer coins only from non-custodial wallets</p>
+          </div>
+
+          <div class="presale__card card card--refund">
+            <p class="card__txt--regular">Any payments made after the collection period will be refunded</p>
+          </div>
+
+          <div class="presale__card card card--wallet card--wallet-ton">
+            <p class="card__txt--regular">For payments in TON, we recommend using Tonkeeper Wallet</p>
+          </div>
+
+          <div class="presale__card card card--wallet card--wallet-sol">
+            <p class="card__txt--regular">For payments in SOL, we recommend using Phantom Wallet</p>
+          </div>
+
+          <div class="presale__card card card--avoid">
+            <p class="card__txt--regular">Avoid using cryptocurrency exchange wallets (such as Binance, OKX, Bybit, and others) for transfers
+              <br /><br />
+              otherwise, we will not be able to credit the coins to your account
+            </p>
+          </div>
+
+          <div class="presale__card card card--stage card--stage-1">
+            <div class="card--stage-head card__txt-container-h">
+              <p class="card__txt--large">0–22k</p>
+              <p class="card__txt--medium">TON</p>
+            </div>
+            <div class="card--stage-head card__txt-container-h">
+              <p class="card__txt--large">0–850</p>
+              <p class="card__txt--medium">SOL</p>
+            </div>
+            <div class="card--stage-body">
+              <div class="card--stage-elem card--stage-elem--unlock">
+                <p class="card__txt--large">50%</p>
+                <p class="card__txt--regular">AT TGE</p>
+              </div>
+              <div class="card--stage-elem card--stage-elem--vesting">
+                <p class="card__txt--large">5</p>
+                <p class="card__txt--regular">months<br />vesting</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="presale__card card card--stage card--stage-2">
+            <div class="card--stage-head card__txt-container-h">
+              <p class="card__txt--large">22–45k</p>
+              <p class="card__txt--medium">TON</p>
+            </div>
+            <div class="card--stage-head card__txt-container-h">
+              <p class="card__txt--large">850–1700</p>
+              <p class="card__txt--medium">SOL</p>
+            </div>
+            <div class="card--stage-body">
+              <div class="card--stage-elem card--stage-elem--unlock">
+                <p class="card__txt--large">40%</p>
+                <p class="card__txt--regular">AT TGE</p>
+              </div>
+              <div class="card--stage-elem card--stage-elem--vesting">
+                <p class="card__txt--large">6</p>
+                <p class="card__txt--regular">months<br />vesting</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="presale__card card card--ticket">
+            <div class="card--ticket-left">
+              <div class="card--ticket-left-top"></div>
+              <div class="card--ticket-left-center"></div>
+              <div class="card--ticket-left-bottom"></div>
+            </div>
+
+            <div class="card--ticket-center">
+              <div class="card--ticket-center-top">
+                <div>
+                  <div class="card__txt-container-h">
+                    <p class="card__txt--large">25</p>
+                    <p class="card__txt--medium">TON*</p>
+                  </div>
+                  <p class="card__txt--regular">The minimum payment</p>
+                </div>
+
+                <p class="card__txt--small">or its equivalent in USDT on the TON network</p>
+              </div>
+
+              <div class="card--ticket-center-bottom">
+                <p class="card__txt--regular">Transactions of less than 25 ton will be used for token buybacks and burning, and are non-refundable</p>
+              </div>
+            </div>
+
+            <div class="card--ticket-right">
+              <div class="card--ticket-right-top"></div>
+              <div class="card--ticket-right-center"></div>
+              <div class="card--ticket-right-bottom"></div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="main__ticker ticker ticker--black" id="ticker-second">
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+      </div>
+      <div class="ticker__inner">
+        <p class="ticker__text">SOL + TON = FreeCZ</p>
+        <p class="ticker__text ticker__text--outline">SOL + TON = FreeCZ</p>
+    </section>
+
+    <section class="main__roadmap roadmap" id="roadmap">
+      <div class="roadmap__inner">
+        <h2 class="roadmap__h2">The FREECZ</h2>
+        <div class="roadmap__container">
+          <div class="roadmap__row">
+            <h3 class="roadmap__h3">Q2&nbsp;2024<span class="roadmap__br"><br /></span>
+              Public Launch</h3>
+              <ul class="roadmap__list roadmap__list--done">
+                <li class="roadmap__item">Unveiling of core game mechanics</li>
+                <li class="roadmap__item">Game Release (beta version)  </li>
+                <li class="roadmap__item">Project goes into open access (beta testing)</li>
+                <li class="roadmap__item">Launch of leaderboards</li>
+                <li class="roadmap__item">First round of community rewards</li>
+                <li class="roadmap__item">Building an active community on Discord</li>
+                <li class="roadmap__item">Assigning roles on Discord</li>
+                <li class="roadmap__item">Launch of additional activities for community</li>
+                <li class="roadmap__item">Active promotion of community rewards</li>
+                <li class="roadmap__item">Onboarding of Tier 1 KOLs</li>
+                <li class="roadmap__item">Launch of Telegram bot for airdrop</li>
+                <li class="roadmap__item">Major marketing campaign</li>
+                <li class="roadmap__item">Onboarding of partners</li>
+              </ul>
+          </div>
+          <div class="roadmap__row">
+            <h3 class="roadmap__h3">Q3&nbsp;2024<br />
+              Game Expansion</h3>
+              <ul class="roadmap__list">
+                <li class="roadmap__item">$FREECZ Token Generation Event</li>
+                <li class="roadmap__item">Listing on Tier 1 Centralized Exchanges (CEX)</li>
+              </ul>
+          </div>
+          <div class="roadmap__row">
+            <h3 class="roadmap__h3">Q4&nbsp;2024<br />
+              Full Launch</h3>
+              <ul class="roadmap__list roadmap__list--finish">
+                <li class="roadmap__item">Integration with TonWallet</li>
+                <li class="roadmap__item">Adding Solana network support</li>
+                <li class="roadmap__item">Public launch of web3 game mechanics</li>
+                <li class="roadmap__item">Adding new game mechanics: mini-games, quests, events</li>
+                <li class="roadmap__item">Expanding game world: new locations, items, interactions</li>
+                <li class="roadmap__item">Implementing new systems: clans, trading, crafting</li>
+                <li class="roadmap__item">Optimization of all game processes</li>
+                <li class="roadmap__item">Launch of Genesis Box presale</li>
+                <li class="roadmap__item">Announcement of NFT collection</li>
+                <li class="roadmap__item">NFT collection presale</li>
+                <li class="roadmap__item">Additional in-game items</li>
+                <li class="roadmap__item">Attribute and character progression system</li>
+                <li class="roadmap__item">Quests, missions and storylines  </li>
+                <li class="roadmap__item">NFT mechanics in the game</li>
+                <li class="roadmap__item">Crafting of legendary FreeCZ NFTs</li>
+                <li class="roadmap__item">Adding FreeCZ to the Apple Store</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="body__footer footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__email"><span>Official e-mail</span><br />
+          <a class="footer__email-link" href="mailto:free-cz-may@proton.me">free-cz-may@proton.me</a>
+        </p>
+
+        <p class="footer__disclaimer">
+          All information on this site is for entertainment purposes only and is not related to any real events or characters. Any resemblance to actual events or persons, living or dead, is purely coincidental<br /><br />
+          <span>©2024 CZ-FREE. All Rights Reserved</span>
+        </p>
+      </div>
+
+      <div class="footer__stores">
+        <a class="footer__store-link" href="#">
+          <img class="footer__store-img footer__store--googleplay" width="152" height="45" src="img/google-play.svg" alt="Available on Google Play">
+        </a>
+          <img class="footer__store-img footer__store--appstore" width="152" height="45" src="img/app-store.svg" alt="Coming soon on the App Store">
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const btnPlay = document.querySelector(`#btn-play`);
+    const btnWatch = document.querySelector(`#btn-watch`);
+    const popup = document.querySelector(`#popup`);
+    const video = document.querySelector(`#video`);
+    const closeVideoBtn = document.querySelector(`#closeVideo`);
+
+
+    const lockScroll = () => {
+      document.body.style.overflow = `hidden`;
+    }
+
+    const unlockScroll = () => {
+      document.body.style.overflow = ``;
+    }
+
+    const clickHandler = () => {
+      popup.classList.remove(`visually-hidden`);
+      /* View in fullscreen */
+      function openFullscreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+          elem.msRequestFullscreen();
+        }
+      }
+      video.play();
+      lockScroll();
+    }
+
+
+    const closeVideo = () => {
+      video.pause();
+      popup.classList.add(`visually-hidden`);
+      unlockScroll();
+    }
+
+    const popupClickHandler = (evt) => {
+      if (evt.target !== video) {
+        closeVideo();
+      }
+    }
+
+    const keyPress = (e) => {
+      if(e.key === "Escape") {
+        closeVideo();
+      }
+    }
+
+    btnPlay.addEventListener('click', clickHandler);
+    btnWatch.addEventListener('click', clickHandler);
+    closeVideoBtn.addEventListener('click', closeVideo);
+    popup.addEventListener('click', popupClickHandler);
+
+    document.body.addEventListener(`keydown`, keyPress);
+
+  </script>
+
+  <script>
+    const addressContainers = document.querySelectorAll('.pay__address-container');
+
+    const showTooltip = (evt) => {
+        const toggleTip = evt.target.parentNode.classList.add('fadeInOut');
+    }
+
+    const hideTooltip = (evt) => {
+        const toggleTip = evt.target.parentNode.classList.remove('fadeInOut');
+    }
+
+    const addressContainerHandler = (evt) => {
+      if (evt.target.classList.contains('pay__address')) {
+        navigator.clipboard.writeText(evt.target.dataset.address);
+
+        showTooltip(evt);
+        setTimeout(() => {hideTooltip(evt)}, 1000);
+
+      } else if (evt.target.classList.contains('pay__copy-btn')) {
+        navigator.clipboard.writeText(evt.target.previousElementSibling.dataset.address);
+
+        showTooltip(evt);
+        setTimeout(() => {hideTooltip(evt)}, 1000);
+      }
+
+
+    }
+
+    addressContainers.forEach(cont => {
+      cont.addEventListener('click', addressContainerHandler);
+    });
+
+
+  </script>
+
+  <script>
+    const openMenuBtn = document.querySelector('#open-menu');
+    const closeMenuBtn = document.querySelector('#close-menu');
+    const header = document.querySelector('#header');
+    const menuLinks = document.querySelector('.menu__links');
+
+    const openMenuHandler = () => {
+      header.classList.add('opened');
+      openMenuBtn.classList.add('visually-hidden');
+      closeMenuBtn.classList.remove('visually-hidden');
+    }
+
+    const closeMenuHandler = () => {
+      header.classList.remove('opened');
+      openMenuBtn.classList.remove('visually-hidden');
+      closeMenuBtn.classList.add('visually-hidden');
+    }
+
+    openMenuBtn.addEventListener('click', openMenuHandler);
+    closeMenuBtn.addEventListener('click', closeMenuHandler);
+    menuLinks.addEventListener('click', closeMenuHandler);
+
+
+    const clickDocumentHandler = (evt) => {
+      if(header.classList.contains('opened') && !evt.target.closest("#header")) {
+        closeMenuHandler();
+      }
+    }
+
+    document.addEventListener('click', clickDocumentHandler);
+  </script>
+
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the offset position of the header
+  var sticky = header.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if ((window.pageYOffset > sticky)) {
+      header.classList.add("header--sticky")
+    } else {
+      header.classList.remove("header--sticky");
+    }
+  }
+</script>
+
+
+<!--
+<script>
+  // Change Language
+
+  const TEXT_EN = {
+    title: `Free CZ!!`,
+    menu__links: [`About`, `Tokenomics`, `Buy&nbsp;$FREECZ`],
+    hero__h1: `Free CZ!`,
+    ticker__text: `SOL + TON = FreeCZ`,
+    about__h2: `ABOUT&nbsp;<span class="about__h2--outline">CZ</span>`,
+    about__text: `Our friend CZ is unfairly imprisoned. We're initiating a presale on Ethereum, Solana, and TON with $FREECZ token which will soon be available on major exchange. Let's prioritize infrastructure to ensure CZ's safety and empower traders with futures trading for financial independence.`,
+    tokenomics__h2: `Tokenomics`,
+    tokenomics__h3: `Total supply`,
+    tokenomics__text: `8,888,888,888&nbsp;&nbsp;<span class="tokenomics__text--small">$FREECZ</span>`,
+    paybail__h2: `Buy&nbsp;<span class="paybail__h2--outline">$FREECZ</span>`,
+    footer__disclaimer: `All information on this site is for entertainment purposes only and is not related to any real events or characters. Any resemblance to actual events or persons, living or dead, is purely coincidental<br /><br />
+    <span>©2024 CZ-FREE. All Rights Reserved</span>`,
+    footer__email: `Official e-mail`
+  };
+
+  const TEXT_PT = {
+    title: `Liberdade para o CZ!!`,
+    menu__links: [`Sobre`, `Tokenomics`, `Comprar&nbsp;$FREECZ`],
+    hero__h1: `Liberdade<br />para o CZ!`,
+    ticker__text: `SOL + TON = FreeCZ`,
+    about__h2: `SOBRE&nbsp;O&nbsp;<span class="about__h2--outline">CZ</span>`,
+    about__text: `Nosso amigo CZ está preso injustamente. Estamos iniciando uma pré-venda em Ethereum, Solana e TON com o token $FREECZ, que em breve estará disponível nas principais exchanges criptomoedas. Vamos priorizar a infraestrutura para garantir a segurança de CZ e capacitar os traders com trading de futuros para a independência financeira.`,
+    tokenomics__h2: `Tokenomics`,
+    tokenomics__h3: `Fornecimento total`,
+    tokenomics__text: `8,888,888,888&nbsp;&nbsp;<span class="tokenomics__text--small">$FREECZ</span>`,
+    paybail__h2: `Comprar <span class="paybail__h2--outline">$FREECZ</span>`,
+    footer__disclaimer: `<span>©2024 CZ-FREE. Todos os direitos reservados</span><br /><br />
+    Todas as informações contidas neste site são apenas para fins de entretenimento e não estão relacionadas a nenhum evento ou personagem real. Qualquer semelhança com eventos ou pessoas reais, vivas ou mortas, é mera coincidência`,
+    footer__email: `E-mail oficial`
+  };
+
+
+  const setLanguage = (data) => {
+    document.title = data.title;
+
+    const menuLinks = document.querySelectorAll(`.menu__link a`);
+    for (let index = 0; index < menuLinks.length; index++) {
+      menuLinks[index].innerHTML = data.menu__links[index];
+    }
+
+    document.querySelector(`.hero__h1`).innerHTML = data.hero__h1;
+    document.querySelector(`.hero__h3`).innerHTML = data.hero__h3;
+
+    const tickerTexts = document.querySelectorAll(`.ticker__text`);
+    for (let index = 0; index < tickerTexts.length; index++) {
+      tickerTexts[index].innerHTML = data.ticker__text;
+    }
+
+    document.querySelector(`.about__h3`).innerHTML = data.about__h3;
+    document.querySelector(`.about__h2`).innerHTML = data.about__h2;
+    document.querySelector(`.about__text`).innerHTML = data.about__text;
+
+    document.querySelector(`.tokenomics__h2`).innerHTML = data.tokenomics__h3;
+    document.querySelector(`.tokenomics__h3`).innerHTML = data.tokenomics__h2;
+    document.querySelector(`.tokenomics__text`).innerHTML = data.tokenomics__text;
+
+    document.querySelector(`.footer__disclaimer`).innerHTML = data.footer__disclaimer;
+    document.querySelector(`.footer__email span`).innerHTML = data.footer__email;
+
+  }
+
+  let preferredLanguage = navigator.languages ? navigator.languages[0] : navigator.language || navigator.userLanguage;
+  const pageLang = preferredLanguage.slice(0, 2);
+
+  if ((pageLang === 'pt') || (pageLang === 'es')) {
+    setLanguage(TEXT_PT);
+    console.log('set to PT');
+    document.body.classList.add('pt');
+  } else {
+    setLanguage(TEXT_EN);
+    console.log('set to EN');
+  }
+
+</script>
+
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".swiper", {
+      autoHeight: true,
+      effect: 'cards',
+      grabCursor: true,
+      initialSlide: 1,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+</body>
+
+</html>

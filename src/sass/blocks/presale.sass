@@ -1,0 +1,84 @@
+.presale
+  padding: 200px 30px
+  display: flex
+  justify-content: center
+
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    width: 100%
+    max-width: 800px
+
+  &__h2
+    font-size: $h2-size
+    font-weight: $black-weight
+    color: $color__text
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+
+    &--outline
+      color: #FFF6EE
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
+
+  &__text
+    font-family: $ral
+    font-weight: $medium
+    font-size: 20px
+    line-height: 1.6
+    margin: 0
+    text-align: center
+    margin-bottom: 25px
+    max-width: 600px
+
+  &__cards
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    gap: 20px
+    width: 100%
+
+@media(max-width: 1024px)
+  .presale
+    padding: 110px 30px
+
+    &__inner
+      gap: 20px
+
+    &__text
+      font-size: 16px
+
+
+@media(max-width: 768px)
+  .presale
+    padding: 90px 30px
+
+    &__h2
+      font-size: $h2-768
+
+
+@media (max-width: 580px)
+  .presale
+
+    &__h2
+      font-size: $h2-480
+
+
+@media(max-width: 480px)
+  .presale
+    padding: 80px 20px
+
+    &__h2
+      font-size: $h2-420
+
+@media (max-width: 420px)
+  .presale
+    padding: 60px 20px
+
+
+@media (max-width: 380px)
+  .presale
+
+    &__h2
+      font-size: $h2-380

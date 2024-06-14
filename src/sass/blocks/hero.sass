@@ -1,0 +1,584 @@
+.hero
+  position: relative
+  overflow: hidden
+  font-family: $unb
+  display: flex
+  justify-content: center
+  background: linear-gradient(0deg, #FFF6EE, #21B2DF)
+
+  &__inner
+    position: relative
+    background-color: transparent
+    display: flex
+    flex-direction: column
+    height: 100%
+
+  &__phone-txt
+    height: 541px
+    position: absolute
+    left: calc(50% - 140px)
+    bottom: 0
+    z-index: 999
+    display: flex
+    justify-content: flex-end
+    gap: 20px
+    flex-direction: column
+    align-items: center
+    box-sizing: border-box
+    background-image: url('img/phone.png')
+    background-repeat: no-repeat
+    background-size: 340px 541px
+    background-position: center bottom
+
+
+  &__btn-play
+    width: 171px
+    height: 171px
+    border: none
+    background-color: transparent
+    background-image: url('img/icon-play.svg')
+    background-repeat: no-repeat
+    padding: 0
+    margin-bottom: 6px
+
+    &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease-out
+        transform: scale(1.1)
+
+    &:active
+      transition: all 0.3s ease-out
+        transform: scale(1.1)
+
+    &:not(:hover)
+      transition: all 0.3s ease-out
+      transform: scale(1)
+
+
+  &__cz
+    position: absolute
+    z-index: 9999
+    left: 30%
+    bottom: 0
+
+  &__cz--pt
+    display: none
+
+  &__ceo
+    position: absolute
+    z-index: 99999
+    right: 34%
+    bottom: 0
+
+  &__gvt
+    position: absolute
+    z-index: 0
+    left: 0
+    bottom: 0
+
+  &__skyscraper
+    position: absolute
+    z-index: 0
+    right: 0
+    bottom: 0
+
+
+  &__h1
+    font-size: $h1-size
+    line-height: 1
+    font-weight: $black-weight
+    color: $color__text-alt
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+
+  &__h2
+    font-size: 34px
+    line-height: 1.08
+    font-weight: $black-weight
+    color: $color__text-alt
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 15px
+    border-radius: 6px
+
+  &__blue-gradient
+    display: inline-block
+    background-image: linear-gradient(90deg, #68D5F6, #10BBF2)
+    padding: 10px 12px
+    border-radius: 6px
+    margin-bottom: -35px
+
+  &__btn
+    margin-bottom: 26px
+
+
+
+  &__h3
+    position: relative
+    display: inline-block
+    font-size: 25px
+    line-height: 1
+    font-weight: $bold
+    color: $color__text-alt
+    background-color: $color__accent
+    margin: 0
+    padding: 15px 15px 15px 63px
+    box-sizing: border-box
+
+    &::before
+      content: ''
+      background-image: url('img/icon--time.svg')
+      background-repeat: no-repeat
+      width: 30px
+      height: 30px
+      display: inline-block
+      margin-right: 10px
+      margin-left: -50px
+      margin-bottom: -5px
+
+
+    &-wrapper
+      display: none
+      position: absolute
+      bottom: 53px
+      right: -144px
+      z-index: 9999
+
+  &__socials
+    position: absolute
+    z-index: 9999
+    bottom: 40px
+    right: 32px
+
+
+.pt .hero
+  &__h1
+    font-size: 135px
+    line-height: 1
+
+  &__cz
+    display: none
+
+  &__cz--pt
+    display: block
+
+@media(max-width: 1730px)
+  .hero
+
+    &__cz
+      left: 32%
+
+    &__ceo
+      right: 32%
+
+.pt .hero
+  &__h1
+    font-size: 95px
+
+@media(max-width: 1540px)
+  .hero
+
+    &__cz
+      left: 29%
+
+    &__ceo
+      height: 52%
+      right: 31%
+
+    &__socials
+      bottom: 20px
+
+    &__socials .socials__list
+      gap: 10px
+
+    &__socials .socials__item
+      width: 46px
+      height: 46px
+
+.pt .hero
+  &__inner
+    z-index: 9999
+  &__h1
+    font-size: 95px
+
+
+
+@media(max-width: 1380px)
+  .hero
+
+    &__inner
+      z-index: 9999
+
+@media(max-width: 1320px)
+  .hero
+
+    &__socials
+      left: 32px
+
+    &__socials .socials__item
+      width: 44px
+      height: 44px
+
+    &__cz
+      left: 22%
+
+    &__ceo
+      right: 22%
+
+    &__gvt
+      left: -60px
+      width: 48%
+      height: auto
+
+    &__skyscraper
+      right: -100px
+      width: 34%
+      height: auto
+
+@media(max-width: 1280px)
+  .hero
+    &__h1
+      font-size: 140px
+
+@media(max-width: 1120px)
+  .hero
+    padding-top: 100px
+    padding-bottom: 350px
+
+    &__h1
+      font-size: 110px
+
+    &__h2
+      font-size: 20px
+      margin-bottom: -9px
+
+    &__phone-txt
+      background-size: 84%
+      bottom: -1px
+
+    &__btn
+      margin-bottom: 16px
+
+    &__btn-play
+      width: 90px
+      height: 90px
+      background-size: contain
+      margin-bottom: -5px
+
+    &__btn--icon
+      padding: 17px 17px 17px 45px
+
+    &__blue-gradient
+      padding: 5px 7px
+
+    &__socials
+      bottom: 20px
+
+    &__socials .socials__list
+      gap: 8px
+
+    &__socials .socials__item
+      width: 35px
+      height: 35px
+
+    &__cz
+      left: 22%
+      width: auto
+      height: 50%
+
+    &__gvt
+      left: 0
+      width: 35%
+
+    &__skyscraper
+      right: 0px
+      width: 35%
+      height: auto
+
+@media(max-width: 960px)
+  .hero
+
+    &__cz
+      left: 18%
+
+    &__gvt
+      left: -10px
+
+
+@media(max-width: 870px)
+  .hero
+
+    &__cz
+      left: 15%
+
+
+@media(max-width: 780px)
+  .hero
+    &__h1
+      font-size: 80px
+
+
+@media(max-width: 768px)
+  .hero
+    &__socials
+      left: 20px
+      bottom: 20px
+
+    &__cz
+      left: 12%
+
+
+@media(max-width: 680px)
+  .hero
+    padding-bottom: 320px
+
+    &__socials
+      z-index: 999990
+      bottom: 7px
+      margin: auto
+
+    .hero__socials .socials__list
+      flex-direction: row
+
+    &__phone-txt
+      left: calc(50% - 130px)
+
+    &__h1
+      font-size: 64px
+
+    &__h3-wrapper
+      bottom: 20px
+      right: -95px
+
+    &__h3
+      font-size: 14px
+
+      &::before
+        width: 23px
+        height: 20px
+
+    &__cz
+      left: 0
+      width: auto
+      height: 57%
+
+    &__ceo
+      right: 16%
+      width: auto
+      height: 57%
+
+    &__gvt
+      left: -20px
+      width: 50%
+      height: auto
+
+    &__skyscraper
+      right: -65px
+      width: 41%
+
+    &__btn
+      margin-bottom: 56px
+
+    &__h2
+      margin-bottom: -5px
+
+    &__btn-play
+      width: 70px
+      height: 70px
+      margin-bottom: -10px
+
+  .pt .hero
+    &__ceo
+      right: 13%
+
+@media(max-width: 580px)
+  .hero
+
+    &__h3-wrapper
+      bottom: -50px
+      right: 135px
+
+    &__skyscraper
+      right: -65px
+      width: 48%
+
+    &__gvt
+      left: -20px
+      width: 55%
+      height: auto
+
+
+  .pt .hero
+
+    &__h1
+      font-size: 62px
+
+    &__ceo
+      right: 10%
+
+    &__cz
+      left: 11%
+
+@media(max-width: 520px)
+  .hero
+    padding-bottom: 320px
+
+    &__socials
+      left: 10px
+      right: 10px
+
+    &__cz
+      left: 1
+      width: auto
+      height: 55%
+
+    &__gvt
+      left: -55px
+      width: 60%
+      height: auto
+
+    &__skyscraper
+      right: -65px
+      width: 48%
+
+
+@media(max-width: 490px)
+  .pt .hero
+
+    &__h1
+      font-size: 44px
+
+
+@media(max-width: 460px)
+  .hero
+
+    &__cz
+      display: none
+
+
+@media(max-width: 440px)
+  .hero
+
+    &__socials
+      left: 5px
+      right: 5px
+
+    &__socials .socials__list
+      gap: 5px
+
+    &__h1
+      font-size: 52px
+
+    &__h3-wrapper
+      bottom: -48px
+      right: 93px
+
+
+    &__gvt
+      left: -55px
+      width: 70%
+      height: auto
+
+    &__skyscraper
+      right: -90px
+      width: 53%
+
+  .pt .hero
+    &__cz
+      left: 8%
+
+    &__ceo
+      right: 5%
+
+
+@media(max-width: 400px)
+  .hero
+    &__h1
+      font-size: 50px
+
+    &__h3-wrapper
+      bottom: -48px
+      right: 86px
+
+    &__gvt
+      left: -55px
+      width: 70%
+      height: auto
+
+    &__skyscraper
+      right: -90px
+      width: 53%
+
+@media(max-width: 390px)
+  .hero
+
+    &__socials .socials__item
+      width: 30px
+      height: 30px
+
+    &__gvt
+      left: -55px
+      width: 72%
+      height: auto
+
+    &__skyscraper
+      right: -90px
+      width: 60%
+
+@media(max-width: 370px)
+  .hero
+
+    &__cz
+      left: 7%
+      height: 53%
+
+    &__ceo
+      right: 4%
+      height: 53%
+
+    &__gvt
+      left: -70px
+      width: 75%
+
+    &__skyscraper
+      right: -90px
+      width: 65%
+
+
+@media(max-width: 340px)
+  .hero
+
+    &__socials .socials__item
+      width: 28px
+      height: 28px
+
+    &__cz
+      left: 6%
+      height: 53%
+
+    &__ceo
+      right: 2%
+      height: 53%
+
+
+    &__gvt
+      left: -70px
+      width: 80%
+
+    &__skyscraper
+      right: -90px
+      width: 65%
+
+  .pt .hero
+    &__h1
+      font-size: 40px
+
+    &__cz
+      left: 5%
+      height: 53%
+
+    &__ceo
+      right: 1%
+      height: 53%

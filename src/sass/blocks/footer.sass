@@ -1,0 +1,118 @@
+.footer
+  font-family: $unb
+  background-color: $color__second
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 20px 30px
+
+  &__inner
+    max-width: $max-width
+    display: flex
+    gap: 30px
+    justify-content: space-between
+
+  &__left
+    display: flex
+    flex-direction: column
+    gap: 18px
+
+
+  &__disclaimer
+    color: $color__text-alt
+    font-weight: $regular
+    font-size: 12px
+    width: 80%
+    opacity: 60%
+    margin: 0
+
+  &__stores
+    display: flex
+    gap: 14px
+    flex-shrink: 0
+
+  &__store-link
+    text-decoration: none
+    margin: 0
+
+    &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        opacity: 70%
+
+    &:active
+      transition: all 0.3s ease
+      opacity: 70%
+
+    &:not(:hover)
+      transition: all 0.3s ease
+      opacity: 100%
+
+  &__email
+    color: $color__text-alt
+    font-weight: $regular
+    font-size: 16px
+    margin: 0
+
+  &__email-link
+    color: $color__accent
+    font-size: 16px
+    font-weight: $medium
+    text-underline-offset: 4px
+
+    &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        text-decoration: none
+
+    &:active
+      transition: all 0.3s ease
+      text-decoration: none
+
+@media(max-width: 768px)
+  .footer
+
+    &__disclaimer
+      width: 90%
+
+@media(max-width: 768px)
+  .footer
+    height: auto
+
+    &__disclaimer
+      width: auto
+
+    &__stores
+      flex-direction: column
+      gap: 5px
+
+@media(max-width: 620px)
+  .footer
+
+    &__inner
+      flex-direction: column-reverse
+      justify-content: flex-start
+      align-items: center
+      gap: 15px
+
+    &__left
+      align-items: center
+
+
+    &__disclaimer, &__email
+      text-align: center
+      width: 70%
+
+    &__stores
+      flex-direction: row
+      gap: 10px
+
+@media(max-width: 580px)
+  .footer
+
+    &__disclaimer, &__email
+      width: 100%
+
+@media(max-width: 480px)
+  .footer
+    padding: 20px 15px

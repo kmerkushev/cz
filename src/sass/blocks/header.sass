@@ -1,0 +1,188 @@
+.header
+  position: fixed
+  width: 100%
+  z-index: 99999
+  background: transparent
+  padding: 24px 30px
+  box-sizing: border-box
+
+  &--sticky
+    background: linear-gradient(0deg, rgba(56,185,225,0.7), rgba(37,179,223,0.7))
+    backdrop-filter: blur(30px)
+
+  &__inner
+    max-width: 1360px
+    margin: auto
+    background-color: transparent
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-left
+      display: flex
+      gap: 50px
+      align-items: baseline
+
+    &-right
+      display: flex
+      gap: 24px
+      align-items: center
+
+  &__close-menu
+    position: absolute
+    top: 20px
+    right: 20px
+    z-index: 99999
+    background-image: url('img/icon--menu-close.svg')
+    width: 40px
+    height: 32px
+
+  &__open-menu
+    background-image: url('img/icon--menu-open.svg')
+    width: 40px
+    height: 28px
+
+
+  &__close-menu,
+  &__open-menu
+    border: none
+    background-size: 100%
+    background-repeat: no-repeat
+    background-color: transparent
+    display: none
+
+  &__logo-link
+    position: relative
+    line-height: 0
+
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: -24px
+      width: 2px
+      height: 34px
+      background-color: $color__text-alt
+      opacity: 50%
+
+@media(max-width: 1400px)
+  .header
+
+    & .pay--small .pay__address
+      font-size: 12px
+      padding: 5px 4px 3px 4px
+
+@media (max-width: 1320px)
+  .header
+
+    &__inner-left
+      width: 100%
+      justify-content: flex-start
+      align-items: center
+
+    &__pay.pay
+      display: none
+
+    &__logo-link::after
+      display: none
+
+@media(max-width:1020px)
+  .header
+    &__logo
+      max-width: 140px
+
+@media(max-width: 768px)
+  .header
+    padding: 20px 20px
+
+
+@media(max-width: 680px)
+  .pt .header
+
+    &__menu
+      display: none
+
+    &__open-menu
+      display: block
+
+    &__close-menu
+      display: block
+
+  .pt .opened
+    background-color: rgba(40, 180, 223, 0.7)
+    padding: 36px 30px
+    backdrop-filter: blur(30px)
+
+    & .header__inner
+      flex-direction: column
+
+    & .header__inner-left
+      flex-direction: column
+      gap: 36px
+
+    & .header__logo-link
+      display: none
+
+    & .header__logo
+      max-width: 150px
+
+    & .menu
+      display: flex
+
+
+
+@media(max-width: 800px)
+  .header
+
+    &__menu
+      display: none
+
+    &__open-menu
+      display: block
+
+    &__close-menu
+      display: block
+
+  .opened
+    background-color: rgba(40, 180, 223, 0.7)
+    padding: 36px 30px
+    backdrop-filter: blur(30px)
+
+    & .header__inner
+      flex-direction: column
+
+    & .header__inner-left
+      flex-direction: column
+      gap: 36px
+
+    & .header__logo-link
+      display: none
+
+    & .header__logo
+      max-width: 150px
+
+    & .menu
+      display: flex
+
+    & .btn--cta
+      margin-top: 16px
+
+@media(max-width: 470px)
+  .btn--cta
+    display: none
+
+
+
+@media (max-width: 1360px)
+  .pt .header
+
+    &__inner-left
+      width: 100%
+      justify-content: space-between
+      align-items: center
+
+    &__pay.pay
+      display: none
+
+    &__logo-link::after
+      display: none

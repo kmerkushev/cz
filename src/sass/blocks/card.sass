@@ -1,0 +1,447 @@
+.card
+  font-family: $unb
+  font-weight: $black-weight
+  color: $black
+  text-transform: uppercase
+  display: flex
+  flex-direction: column
+  gap: 6px
+  background-color: #EEEEEE
+  border: 4px solid $black
+  border-radius: 20px
+  padding: 18px
+  box-sizing: border-box
+  width: 100%
+
+  &__txt--small
+    font-size: 12px
+    line-height: 1.3
+    margin: 0
+
+  &__txt--regular
+    font-size: 16px
+    line-height: 1.4
+    margin: 0
+
+  &__txt--medium
+    font-size: 22px
+    line-height: 1.5
+    margin: 0
+
+  &__txt--large
+    font-size: 50px
+    line-height: 1
+    margin: 0
+
+  &--burn
+    min-width: 290px
+    max-width: 600px
+    height: 273px
+    background-image: url('img/card-bg--burn.svg')
+    background-repeat: no-repeat
+    background-position: bottom right
+    grid-column-start: 1
+    grid-column-end: 5
+    background-size: contain
+
+  &--farming
+    min-width: 290px
+    max-width: 600px
+    background-repeat: no-repeat
+    background-position: bottom right
+    background-color: $orange
+    height: 273px
+    background-image: url('img/card-bg--farming.svg')
+    background-repeat: no-repeat
+    background-position: bottom 15px right 25px
+    grid-column-start: 5
+    grid-column-end: 11
+
+  &__txt-container-h
+    display: flex
+    align-items: baseline
+    gap: 0px
+    flex-wrap: wrap
+
+  &--allocate
+    background-image: url('img/card-bg--allocate.svg')
+    background-repeat: no-repeat
+    background-size: 110px
+    background-position: bottom 15px right 0px
+    grid-column-start: 3
+    grid-column-end: 9
+    background-color: $orange
+
+    & .card__txt--large
+      margin-right: 8px
+
+  &--coins
+    background-color: $orange
+    background-image: url('img/card-bg--coins.svg')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position: center
+
+    &-1
+      grid-column-start: 1
+      grid-column-end: 3
+
+    &-2
+      grid-column-start: 9
+      grid-column-end: 11
+
+  &--refund
+    text-align: center
+    grid-column-start: 6
+    grid-column-end: 11
+    justify-content: center
+
+
+  &--transfer
+    grid-column-start: 1
+    grid-column-end: 6
+    padding-left: 102px
+    background-image: url('img/card-bg--transfer.svg')
+    background-repeat: no-repeat
+    background-size: 60px
+    background-position: center left 22px
+    min-height: 135px
+    justify-content: center
+
+  &--wallet
+    padding-left: 129px
+    background-repeat: no-repeat
+    background-position: top 18px left 22px
+    height: 135px
+    justify-content: center
+
+    &-ton
+      grid-column-start: 1
+      grid-column-end: 6
+      background-image: url('img/card-bg--wallet-ton.svg')
+      background-size: 87px
+
+    &-sol
+      grid-column-start: 6
+      grid-column-end: 11
+      background-image: url('img/card-bg--wallet-sol.svg')
+      background-size: 82px
+
+  &--avoid
+    grid-column-start: 1
+    grid-column-end: 11
+    background-color: $orange
+    padding-left: 190px
+    background-image: url('img/card-bg--avoid.svg')
+    background-repeat: no-repeat
+    background-size: 140px
+    background-position: top 15px left 16px
+
+  &--stage
+    padding: 0
+    gap: 0
+
+  &--stage-head
+    padding: 18px
+    border-bottom: 4px dashed $black
+
+  &--stage-body
+    display: flex
+    flex-direction: column
+    gap: 18px
+    padding: 18px
+
+  &--stage-elem
+    padding: 16px 0px 16px 100px
+    background-position-y: center
+    background-repeat: no-repeat
+
+    &--unlock
+      background-image: url('img/card-bg--unlock.svg')
+      background-size: 78px 92px
+
+    &--vesting
+      background-image: url('img/card-bg--vesting.svg')
+      background-size: 78px 92px
+
+  &--stage &__txt--large
+    font-size: 33px
+    margin-right: 6px
+
+
+  &--stage-1
+    grid-column-start: 1
+    grid-column-end: 6
+
+  &--stage-2
+    grid-column-start: 6
+    grid-column-end: 11
+
+
+  &--ticket
+    display: flex
+    flex-direction: row
+    position: relative
+    padding: 0
+    border: none
+    gap: 0
+    background-color: transparent
+    grid-column-start: 1
+    grid-column-end: 11
+
+    &-center
+      width: 100%
+      background-color: $orange
+      border-top: 4px solid $black
+      border-bottom: 4px solid $black
+      border-left: 4px dashed $black
+      border-right: 4px dashed $black
+
+      &-top
+        padding: 30px 30px 15px 30px
+        display: flex
+        justify-content: space-between
+        border-bottom: 4px dashed $black
+
+        & .card__txt--large
+          margin-right: 8px
+
+        & .card__txt--small
+          position: relative
+          max-width: 220px
+
+          &::before
+            position: absolute
+            top: 0
+            left: -10px
+            content: '*'
+
+      &-bottom
+        padding: 15px 30px 30px 30px
+
+        & .card__txt--regular
+          margin: 0
+          max-width: 480px
+
+    &-left
+      display: flex
+      flex-direction: column
+      width: 50px
+
+      &-top
+        border-left: 4px solid $black
+        border-top: 4px solid $black
+        border-radius: 20px 0 0 0
+        height: 100%
+        background-color: $orange
+        margin-bottom: -1px
+
+      &-center
+        width: 50px
+        min-height: 60px
+        background-image: url('img/ticket-hole.svg')
+        background-repeat: no-repeat
+        background-size: 50px 60px
+        background-color: transparent
+
+      &-bottom
+        border-left: 4px solid $black
+        border-bottom: 4px solid $black
+        border-radius: 0 0 0 20px
+        height: 100%
+        background-color: $orange
+        margin-top: -1px
+
+    &-right
+      display: flex
+      flex-direction: column
+      width: 50px
+      margin-left: -1px
+
+      &-top
+        border-right: 4px solid $black
+        border-top: 4px solid $black
+        border-radius: 0 20px 0 0
+        height: 100%
+        background-color: $orange
+        margin-bottom: -1px
+
+      &-center
+        width: 50px
+        min-height: 60px
+        background-image: url('img/ticket-hole.svg')
+        background-repeat: no-repeat
+        background-size: 50px 60px
+        transform: rotate(180deg)
+        background-color: transparent
+
+      &-bottom
+        border-right: 4px solid $black
+        border-bottom: 4px solid $black
+        border-radius: 0 0 20px 0
+        height: 100%
+        background-color: $orange
+        margin-top: -1px
+
+@media(max-width: 820px)
+  .card
+
+
+    &--farming
+      background-size: 246px
+
+    &--allocate
+      background-image: none
+
+    &--transfer
+      grid-column-start: 1
+      grid-column-end: 7
+
+    &--refund
+      grid-column-start: 7
+      grid-column-end: 11
+
+    &--wallet-ton
+      grid-column-start: 1
+      grid-column-end: 9
+
+    &--wallet-sol
+      grid-column-start: 3
+      grid-column-end: 11
+
+@media(max-width: 730px)
+  .card
+
+    &--burn
+      grid-column-start: 1
+      grid-column-end: 9
+
+    &--farming
+      grid-column-start: 3
+      grid-column-end: 11
+
+
+@media(max-width: 680px)
+  .card
+
+    &__txt-container-h
+      display: flex
+      flex-direction: column
+      gap: 0px
+
+
+@media(max-width: 650px)
+  .card
+
+    &--stage
+      grid-column-start: 1
+      grid-column-end: 11
+
+    &__txt-container-h
+      flex-direction: row
+      gap: 0px
+
+    &--stage-body
+      flex-direction: row
+      justify-content: space-between
+
+    &--ticket-center-top
+      flex-direction: column
+      gap: 10px
+
+
+
+@media(max-width: 580px)
+  .card
+
+    &--allocate &__txt--large
+      font-size: 44px
+
+    &--stage-body
+      flex-direction: column
+
+
+@media(max-width: 520px)
+  .card
+
+    &--burn
+      grid-column-start: 1
+      grid-column-end: 11
+
+
+    &--farming
+      grid-column-start: 1
+      grid-column-end: 11
+
+    &--allocate
+      grid-column-start: 1
+      grid-column-end: 11
+      background-image: url('img/card-bg--allocate.svg')
+
+    &--coins
+      display: none
+
+    &--refund
+      grid-column-start: 1
+      grid-column-end: 11
+
+    &--transfer
+      grid-column-start: 1
+      grid-column-end: 11
+
+    &--wallet
+      grid-column-start: 1
+      grid-column-end: 11
+      padding-left: 22px
+      padding-right: 129px
+      background-position: top 18px right 22px
+
+      &-sol
+        padding-left: 129px
+        padding-right: 22px
+        background-position: top 18px left 22px
+
+    &--avoid
+      padding-left: 22px
+      padding-top: 175px
+
+
+@media(max-width:480px)
+  .card
+
+
+    &--ticket-center-top,
+    &--ticket-center-bottom
+      padding: 15px 15px 15px 15px
+
+
+
+@media(max-width: 420px)
+  .card
+
+    &--farming
+      height: 350px
+
+    &--allocate
+      background-image: none
+
+@media(max-width: 390px)
+  .card
+
+    &__txt--regular
+      font-size: 14px
+
+@media(max-width: 360px)
+  .card
+
+    &--wallet
+      background-size: 70px
+      height: 135px
+
+      &-ton
+        padding-right: 100px
+
+      &-sol
+        padding-left: 100px
+
+    &--stage &__txt--large

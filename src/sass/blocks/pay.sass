@@ -1,0 +1,222 @@
+.pay
+  font-family: $unb
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 16px
+
+  &__portrait
+    max-width: 136px
+
+  &__text-container
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+  &__name
+    font-size: 32px
+    font-width: $regular
+    color: $color__text
+    margin: 0
+    text-align: center
+
+  &__address
+    padding: 11px 7px
+    font-size: 24px
+    color: $color__text
+    background-color: $color__text-alt
+    margin: 0
+    user-select: none
+
+    &:hover
+      cursor: pointer
+
+  &__address-container
+    display: flex
+    position: relative
+
+    &::before
+      content: 'Copied!'
+      position: absolute
+      font-weight: $regular
+      top: 60px
+      left: 76px
+      font-size: 13px
+      color: $color__text-alt
+      opacity: 0
+      transition: all 0.5s ease-out
+      background-color: rgba(0,0,0,0.5)
+      border-radius: 8px
+      border: 1px solid $color__text-alt
+      padding: 5px 10px
+
+    &.fadeInOut::before
+      transform: translateY(-3px)
+      opacity: 1
+      transition: all 0.5s ease-out
+
+  &__copy-btn
+    position: relative
+    padding: 0
+    width: 52px
+    height: 52px
+    border: none
+    background-color: $color__second
+    background-image: url('img/icon--copy-big.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 40px
+
+    &:hover
+      @media #{$mouse-device}
+        background-image: url('img/icon--copy-big-orange.svg')
+
+    &:active
+      background-image: url('img/icon--copy-big-orange.svg')
+
+    &:not(:hover)
+      background-image: url('img/icon--copy-big.svg')
+
+
+  &--small
+    flex-direction: row
+    gap: 8px
+
+  &--small &__portrait
+    width: 52px
+    height: 52px
+
+  &--small &__text-container
+    gap: 6px
+
+  &--small &__name
+    font-size: 16px
+    font-weight: $bold
+    color: $color__text-alt
+
+  &--small &__address-container
+
+    &::before
+      content: 'Copied!'
+      top: 35px
+      left: 38px
+      border-radius: 8px
+      border: 1px solid $color__text-alt
+      padding: 5px
+
+  &--small &__address
+    font-size: 14px
+    font-weight: $regular
+    padding: 5px 4px 3px 4px
+
+  &--small &__copy-btn
+    width: 28px
+    height: 26px
+    background-color: $color__accent
+    background-image: url('img/icon--copy.svg')
+    background-size: contain
+
+    &:hover
+      @media #{$mouse-device}
+        background-color: $color__second
+        transition: all 0.3s ease
+
+    &:active
+      background-color: $color__second
+      transition: all 0.3s ease
+
+    &:not(:hover)
+      background-color: $color__accent
+      transition: all 0.3s ease
+
+
+    &::before
+      color: $color__text-alt
+      font-size: 12px
+      font-weight: $regular
+      top: 125%
+      bottom: 50px
+      left: -12px
+
+@media(max-width: 1024px)
+  .pay
+    &__address
+      font-size: 21px
+
+
+@media(max-width: 768px)
+  .pay
+
+    &__portrait
+      max-width: 100px
+      height: auto
+
+    &__name
+      font-size: 28px
+
+    &__address
+      font-size: 16px
+
+    &__copy-btn
+      width: 40px
+      height: 40px
+      background-size: 28px
+
+@media(max-width: 620px)
+  .pay
+    &__address
+      font-size: 14px
+      padding: 8px
+
+    &__copy-btn
+      width: 34px
+      height: 34px
+      background-size: 24px
+
+@media(max-width: 580px)
+  .pay
+
+    &__portrait
+      max-width: 100px
+      height: auto
+
+    &__name
+      font-size: 28px
+
+    &__address
+      padding: 11px 7px
+      font-size: 24px
+
+    &__portrait
+      width: 100%
+      height: auto
+
+    &__copy-btn
+      width: 52px
+      height: 52px
+      background-size: 40px
+
+@media(max-width: 380px)
+  .pay
+    &__portrait
+      max-width: 120px
+
+    &__name
+      font-size: 28px
+
+    &__address
+      font-size: 16px
+
+    &__copy-btn
+      width: 40px
+      height: 40px
+      background-size: 28px
+
+
+.pt .pay
+  &__address-container
+    &::before
+      content: 'Copiado!'
+
+.pt .pay--small .pay__address-container::before
+    left: 26px

@@ -1,0 +1,95 @@
+.ticker
+  padding: 38px 0
+  background-color: $color__accent
+  font-family: $unb
+  max-height: 76px
+  width: 100%
+  overflow: hidden
+  display: flex
+  gap: 35px
+
+  &__inner
+    display: flex
+    align-items: center
+    gap: 35px
+    animation: ticker 15s infinite linear
+
+  &:hover &__inner
+    @media #{$mouse-device}
+      animation-play-state: paused
+
+  &__text
+    font-size: 34px
+    font-weight: $bold
+    color: $color__text-alt
+    margin: 0
+    line-height: 0
+    white-space: nowrap
+    text-transform: uppercase
+
+    &--thin
+      font-weight: $light
+      background-image: url(img/dash.svg)
+      background-repeat: no-repeat
+      width: 26px
+      height: 24px
+
+    &--outline
+      color: $color__accent
+      text-shadow: -1px -1px 0 $color__text-alt, 1px -1px 0 $color__text-alt, -1px 1px 0 $color__text-alt, 1px 1px $color__text-alt
+
+
+  &--black
+    background-color: $color__second
+
+  &--black &__text--outline
+    color: $color__second
+
+  &--black &__text--thin
+    background-color: $color__accent
+
+
+  @keyframes ticker
+    100%
+      transform: translateX(-102.7%)
+
+
+@media(max-width: 1024px)
+  .ticker
+    padding: 28px 0
+    gap: 35px
+
+    &__text
+      font-size: 26px
+
+@media(max-width: 768px)
+  .ticker
+    padding: 26px 0
+    gap: 30px
+
+    &__text
+      font-size: 42px
+
+@media(max-width: 620px)
+  .ticker
+    padding: 22px 0
+    gap: 26px
+
+    &__text
+      font-size: $h2-380
+
+@media(max-width: 420px)
+  .ticker
+    padding: 22px 0
+    gap: 26px
+
+    &__text
+      font-size: $h2-380
+
+@media(max-width: 420px)
+  .ticker
+    padding: 22px 0
+    gap: 24px
+
+    &__text
+      font-size: 24px

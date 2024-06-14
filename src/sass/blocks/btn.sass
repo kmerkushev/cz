@@ -1,0 +1,118 @@
+.btn
+  font-family: $unb
+  font-weight: $black-weight
+  font-size: 16px
+  line-height: 1.2
+  color: $white
+  text-decoration: none
+  text-transform: uppercase
+  text-align: center
+  box-sizing: border-box
+  border-radius: 16px
+  border: 2px solid #BF6A1D
+  padding: 10px 20px
+  background-color: $orange
+  box-shadow: 0px 4px #BF6A1D
+  text-shadow: 0px 2px #B8671E
+
+  &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        transform: translate(0, 6px)
+        background-color: #E37C1D
+        box-shadow: 0px 0px #BF6A1D
+        text-shadow: 0px 0px #B8671E
+
+
+  &:active
+    transition: all 0.3s ease
+    transform: translate(0, 6px)
+    background-color: #E37C1D
+    box-shadow: 0px 0px #BF6A1D
+    text-shadow: 0px 0px #B8671E
+
+  &:not(:hover)
+    transition: all 0.3s ease
+    transform: translate(0, 0px)
+    background-color: $orange
+    box-shadow: 0px 4px #BF6A1D
+
+
+  &--cta
+    width: 210px
+    height: 58px
+    position: relative
+    padding: 10px 26px 10px 68px
+    font-size: 16px
+    line-height: 1.1
+    font-weight: $black-weight
+    border: 2px solid #FFF895
+    border-radius: 16px
+    background-color: #FFF223
+    background-image: url('img/btn-pattern.svg')
+    box-shadow: 0px 0px 10px #FFF0A0, 0px 6px #c17505
+    transform: translate(0, -3px)
+    text-shadow: 0 1px 2px #8f7a00
+
+
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 66px
+      height: 55px
+      background-image: url('img/btn-cz@2x.png')
+      background-size: contain
+      background-repeat: no-repeat
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+
+    &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        transform: translate(0, 6px)
+        background-color: #f1c800
+        text-shadow: none
+        box-shadow: 0px 0px 25px #FFF0A0, 0px 0px #c17505
+
+    &:active
+      transition: all 0.3s ease
+      transform: translate(0, 3px)
+      background-color: #f1c800
+      box-shadow: 0px 0px 25px #FFF0A0, 0px 0px #c17505
+      text-shadow: none
+
+    &:not(:hover)
+      transition: all 0.3s ease
+      text-shadow: none
+      transform: translate(0, -3px)
+      background-color: #FFF223
+      box-shadow: 0px 0px 10px #FFF0A0, 0px 06px #c17505
+      text-shadow: 0 1px 2px #8f7a00
+
+  &--icon
+    height: 66px
+    padding: 22px 22px 22px 47px
+    background-image: url('img/icon-play--small.svg')
+    background-repeat: no-repeat
+    background-position: 19px
+    background-size: 21px 24px
+
+@media(max-width: 960px)
+  .btn
+
+    &--cta
+      width: 190px
+      height: 46px
+      padding: 6px 21px 10px 49px
+      border-radius: 8px
+      font-size: 15px
+
+      &::before
+        width: 53px

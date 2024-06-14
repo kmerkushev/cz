@@ -1,0 +1,170 @@
+.swiper-container
+  padding: 0 140px 48px 140px
+  box-sizing: border-box
+  width: 542px
+  overflow: hidden
+
+
+.swiper
+  width: 264px
+  box-sizing: border-box
+
+  &-slide
+    border-radius: 30px
+
+    &__img
+      border-radius: 30px
+      border: 4px solid $black
+      box-sizing: border-box
+
+    &__txt
+      margin-top: 22px
+      display: none
+      font-family: $ral
+      font-size: 20px
+      font-weight: $semibold
+      color: $black
+      text-align: center
+      background-color: #FFF6EE
+
+  &-pagination
+    bottom: -50px !important
+
+  &-pagination-bullet
+    width: 15px
+    height: 15px
+    background-color: #777777
+    border: 2px solid #777777
+    opacity: 1
+    margin: 0px 8px !important
+    box-sizing: border-box
+
+    &:hover
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        background-color: $orange
+        border: 2px solid $orange
+        transform: scale(1.3)
+
+    &:active
+      transition: all 0.3s ease
+      background-color: $orange
+      border: 2px solid $orange
+      transform: scale(1.6)
+
+    &:not(:hover)
+      @media #{$mouse-device}
+        transition: all 0.3s ease
+        transform: scale(1)
+        background-color: #777777
+        border: 2px solid #777777
+
+
+    &-active
+      width: 15px
+      height: 15px
+      background-color: #FFFFFF
+      border: 2px solid #777777
+      opacity: 1
+      box-sizing: border-box
+
+      &:hover
+        @media #{$mouse-device}
+          transition: all 0.3s ease
+          border: 2px solid $orange
+
+      &:active
+        transition: all 0.3s ease
+        border: 2px solid $orange
+
+      &:not(:hover)
+        @media #{$mouse-device}
+          transition: all 0.3s ease
+          border: 2px solid #777777
+          background-color: $white
+
+
+  &-button-prev, &-button-next
+    width: 59px
+    height: 59px
+    box-sizing: border-box
+    border: 2px solid #BF6A1D
+    background-color: $orange
+    box-shadow: 0px 4px #BF6A1D
+    border-radius: 50%
+
+    &::after
+      color: $white
+      text-shadow: 0px 2px #BF6A1D
+      font-size: 32px
+      font-weight: bold
+      transform: translate(-2px, 0)
+
+  &-button-prev
+    left: -135px
+
+  &-button-next
+    right: -135px
+
+    &::after
+      color: $white
+      text-shadow: 0px 2px #BF6A1D
+      font-size: 32px
+      font-weight: bold
+      transform: translate(3px, 0)
+
+  &-button-prev:hover,
+  &-button-next:hover
+    @media #{$mouse-device}
+      transition: all 0.3s ease
+      transform: translate(0, 6px)
+      background-color: #E37C1D
+      box-shadow: 0px 0px #BF6A1D
+      text-shadow: 0px 0px #B8671E
+
+    &::after
+      transition: all 0.3s ease
+      text-shadow: 0px 0px #BF6A1D
+
+  &-button-prev:active,
+  &-button-next:active
+    transition: all 0.3s ease
+      transform: translate(0, 6px)
+      background-color: #E37C1D
+      box-shadow: 0px 0px #BF6A1D
+      text-shadow: 0px 0px #B8671E
+
+    &::after
+      transition: all 0.3s ease
+      text-shadow: 0px 0px #BF6A1D
+
+  &-button-prev:not(:hover),
+  &-button-next:not(:hover)
+    @media #{$mouse-device}
+      transition: all 0.3s ease
+      transform: translate(0, 0px)
+      background-color: $orange
+      box-shadow: 0px 4px #BF6A1D
+
+    &::after
+      transition: all 0.3s ease
+      text-shadow: 0px 2px #BF6A1D
+
+.swiper-slide-active .swiper-slide__txt
+    display: block
+
+@media(max-width: 580px)
+  .swiper
+
+    &-button-prev
+      left: -85px
+
+    &-button-next
+      right: -85px
+
+@media(max-width: 440px)
+  .swiper
+
+    &-button-prev,
+    &-button-next
+      display: none

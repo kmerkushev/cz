@@ -1,0 +1,86 @@
+.socials
+  background-color: transparent
+  max-width: fit-content
+
+  &__list
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: column
+    gap: 12px
+    list-style-type: none
+
+  &__item
+    width: 52px
+    height: 52px
+
+    &:nth-of-type(1) .socials__link
+      background-image: url('img/icon-socials--x.svg')
+
+    &:nth-of-type(2) .socials__link
+      background-image: url('img/icon-socials--telegram.svg')
+
+    &:nth-of-type(3) .socials__link
+      background-image: url('img/icon-socials--sparrow.svg')
+
+    &:nth-of-type(4) .socials__link
+      background-image: url('img/icon-socials--cube.svg')
+
+    &:nth-of-type(5) .socials__link
+      background-image: url('img/icon-socials--dex-screener.svg')
+
+    &:nth-of-type(6) .socials__link
+      background-image: url('img/icon-socials--aim.svg')
+
+    &:nth-of-type(7) .socials__link
+      background-image: url('img/icon-socials--seal.svg')
+
+    &:nth-of-type(8) .socials__link
+      background-image: url('img/icon-socials--m.svg')
+
+    &:nth-of-type(9) .socials__link
+      background-image: url('img/icon-socials--binance.svg')
+
+    &:nth-of-type(10) .socials__link
+      background-image: url('img/icon-socials--mountains.svg')
+
+  &__link
+    position: relative
+    display: inline-block
+    width: 100%
+    height: 100%
+    background-color: $color__text-alt
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+
+    &:hover::before
+      @media #{$mouse-device}
+        content: ''
+        opacity: 0
+        background-color: rgba(255,255,255,1)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        animation: fadeToWhite 0.3s ease forwards
+
+    &:active
+      content: ''
+        opacity: 0
+        background-color: rgba(255,255,255,1)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        animation: fadeToWhite 0.3s ease forwards
+
+
+@keyframes fadeToWhite
+  100%
+    opacity: 0.6
+
+
+
